@@ -1,94 +1,55 @@
-/* Configuração Geral da Página */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f4f1;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    color: #333;
-}
-
-.container {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
-    text-align: center;
-    max-width: 800px;
-    width: 100%;
-}
-
-h1 {
-    margin-bottom: 30px;
-    color: #2e6f40;
-}
-
-/* Alinhamento lado a lado: Avatar na esquerda, Botões na direita */
-.gerador-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-    align-items: center;
-}
-
-/* 1. O SEGREDO DO EMPILHAMENTO (PREVIEW) */
-.avatar-preview {
-    position: relative; /* Janela de referência para as imagens */
-    width: 300px;
-    height: 300px;
-    background-color: #f9f9f9;
-    border: 3px dashed #ddd;
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-.avatar-preview img {
-    position: absolute; /* Empilha as imagens uma em cima da outra */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Garante que o SVG não distorça */
-}
-
-/* 2. PAINEL DE CONTROLE (BOTÕES) */
-.painel-controle {
-    flex: 1;
-    min-width: 280px;
+/* Estilo do Formulário de Envio */
+.formulario-envio {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid #eee;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    text-align: left;
+    gap: 12px;
 }
 
-.categoria h3 {
-    margin: 0 0 10px 0;
-    font-size: 16px;
-    color: #555;
-}
-
-.botoes {
-    display: flex;
-    gap: 10px;
-}
-
-.botoes button {
-    background-color: #e2ede4;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 600;
+.formulario-envio h3 {
+    margin: 0;
+    font-size: 18px;
     color: #2e6f40;
-    transition: all 0.2s ease;
 }
 
-.botoes button:hover {
+.formulario-envio p {
+    margin: 0 0 5px 0;
+    font-size: 13px;
+    color: #666;
+}
+
+.formulario-envio input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.formulario-envio input:focus {
+    border-color: #2e6f40;
+}
+
+#btn-enviar {
     background-color: #2e6f40;
-    color: #ffffff;
-    transform: translateY(-2px);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+#btn-enviar:hover {
+    background-color: #21512e;
+}
+
+#btn-enviar:active {
+    transform: scale(0.98);
 }
