@@ -1,33 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>Criador de Avatar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brotinho Avatar</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<h1>Meu Avatar</h1>
+    <div class="container">
+        <h1>Criador de Avatar 🌿</h1>
+        
+        <div class="gerador-wrapper">
+            <div class="avatar-preview">
+                <img id="camada-pele" src="assets/pele/Sem título-1_pele 01.svg" alt="Pele do Avatar">
+                <img id="camada-olhos" src="assets/olhos/Sem título-1_olho 01.svg" alt="Olhos do Avatar">
+                <img id="camada-cabelo" src="assets/cabelos/Sem título-1_cabelo 01.svg" alt="Cabelo do Avatar">
+            </div>
 
-<div class="avatar">
+            <div class="painel-controle">
+                
+                <div class="categoria">
+                    <h3>Escolha a Pele</h3>
+                    <div class="botoes">
+                        <button onclick="mudarPele('Sem título-1_pele 01.svg')">Pele 1</button>
+                        <button onclick="mudarPele('Sem título-1_pele 02.svg')">Pele 2</button>
+                        <button onclick="mudarPele('Sem título-1_pele 03.svg')">Pele 3</button>
+                    </div>
+                </div>
 
-    <img id="pele" src="assets/pele/pele1.svg">
-    <img id="olhos" src="assets/olhos/olho1.svg">
-    <img id="cabelo" src="assets/cabelos/cabelo1.svg">
+                <div class="categoria">
+                    <h3>Escolha os Olhos</h3>
+                    <div class="botoes">
+                        <button onclick="mudarOlhos('Sem título-1_olho 01.svg')">Olhos 1</button>
+                        <button onclick="mudarOlhos('Sem título-1_olho 02.svg')">Olhos 2</button>
+                        <button onclick="mudarOlhos('Sem título-1_olho 03.svg')">Olhos 3</button>
+                    </div>
+                </div>
 
-</div>
+                <div class="categoria">
+                    <h3>Escolha o Cabelo</h3>
+                    <div class="botoes">
+                        <button onclick="mudarCabelo('Sem título-1_cabelo 01.svg')">Cabelo 1</button>
+                        <button onclick="mudarCabelo('Sem título-1_cabelo 02.svg')">Cabelo 2</button>
+                        <button onclick="mudarCabelo('Sem título-1_cabelo 03.svg')">Cabelo 3</button>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+    </div>
 
-<div class="botoes">
-
-<button onclick="trocarPele()">Trocar pele</button>
-<button onclick="trocarOlho()">Trocar olhos</button>
-<button onclick="trocarCabelo()">Trocar cabelo</button>
-
-</div>
-
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
