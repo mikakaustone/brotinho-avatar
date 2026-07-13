@@ -1,47 +1,20 @@
-let pele = 1;
-let olho = 1;
-let cabelo = 1;
-
-
-function trocarPele(){
-
-pele++;
-
-if(pele>3){
-pele=1;
+// Função para trocar a imagem da pele
+function mudarPele(nomeArquivo) {
+    const camadaPele = document.getElementById('camada-pele');
+    // Atualiza o src da imagem apontando para a pasta correta de pele
+    camadaPele.src = `assets/pele/${nomeArquivo}`;
 }
 
-document.getElementById("pele").src =
-"assets/pele/pele"+pele+".svg";
-
+// Função para trocar a imagem dos olhos
+function mudarOlhos(nomeArquivo) {
+    const camadaOlhos = document.getElementById('camada-olhos');
+    // Atualiza o src da imagem apontando para a pasta de olhos
+    camadaOlhos.src = `assets/olhos/${nomeArquivo}`;
 }
 
-
-
-function trocarOlho(){
-
-olho++;
-
-if(olho>3){
-olho=1;
-}
-
-document.getElementById("olhos").src =
-"assets/olhos/olho"+olho+".svg";
-
-}
-
-
-
-function trocarCabelo(){
-
-cabelo++;
-
-if(cabelo>3){
-cabelo=1;
-}
-
-document.getElementById("cabelo").src =
-"assets/cabelos/cabelo"+cabelo+".svg";
-
+// Função para trocar a imagem do cabelo
+function mudarCabelo(nomeArquivo) {
+    const camadaCabelo = document.getElementById('camada-cabelo');
+    // Atualiza o src da imagem apontando para a pasta de cabelos
+    camadaCabelo.src = `assets/cabelos/${nomeArquivo}`;
 }
