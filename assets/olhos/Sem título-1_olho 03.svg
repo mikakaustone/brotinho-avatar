@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 691 837">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #44332e;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-3 {
+        fill: #fde5d6;
+      }
+
+      .cls-4 {
+        fill: #ef41eb;
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <path class="cls-2" d="M182.09,491.67c-.89-3.56-13.55-55.54,11.01-66.07s84.42,18.27,84.42,99.1c0,22.02-88.09-3.67-95.43-33.03Z"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <path class="cls-2" d="M508.38,491.67c.89-3.56,13.55-55.54-11.01-66.07-25.69-11.01-84.42,18.27-84.42,99.1,0,22.02,88.09-3.67,95.43-33.03Z"/>
+    </clipPath>
+  </defs>
+  <g>
+    <path class="cls-3" d="M182.09,491.67c-.89-3.56-13.55-55.54,11.01-66.07s84.42,18.27,84.42,99.1c0,22.02-88.09-3.67-95.43-33.03Z"/>
+    <g class="cls-6">
+      <circle class="cls-4" cx="240.82" cy="469.64" r="47.72"/>
+      <circle class="cls-1" cx="242.65" cy="467.81" r="38.54"/>
+      <circle class="cls-3" cx="221.65" cy="445.79" r="11.01"/>
+      <circle class="cls-3" cx="234.5" cy="473.32" r="5.51"/>
+    </g>
+  </g>
+  <g>
+    <path class="cls-3" d="M508.38,491.67c.89-3.56,13.55-55.54-11.01-66.07-25.69-11.01-84.42,18.27-84.42,99.1,0,22.02,88.09-3.67,95.43-33.03Z"/>
+    <g class="cls-5">
+      <circle class="cls-4" cx="449.65" cy="469.64" r="47.72"/>
+      <circle class="cls-1" cx="447.82" cy="467.81" r="38.54"/>
+      <circle class="cls-3" cx="468.81" cy="445.79" r="11.01"/>
+      <circle class="cls-3" cx="455.97" cy="473.32" r="5.51"/>
+    </g>
+  </g>
+</svg>
