@@ -23,40 +23,42 @@
                 <div class="categoria">
                     <h3>Escolha a Pele</h3>
                     <div class="botoes">
-                        <button type="button" onclick="mudarPele('Sem título-1_pele 01.svg')">Pele 1</button>
-                        <button type="button" onclick="mudarPele('Sem título-1_pele 02.svg')">Pele 2</button>
-                        <button type="button" onclick="mudarPele('Sem título-1_pele 03.svg')">Pele 3</button>
+                        <button type="button" onclick="mudarPele('Sem título-1_pele 01.svg', 'Pele 1')">Pele 1</button>
+                        <button type="button" onclick="mudarPele('Sem título-1_pele 02.svg', 'Pele 2')">Pele 2</button>
+                        <button type="button" onclick="mudarPele('Sem título-1_pele 03.svg', 'Pele 3')">Pele 3</button>
                     </div>
                 </div>
 
                 <div class="categoria">
                     <h3>Escolha os Olhos</h3>
                     <div class="botoes">
-                        <button type="button" onclick="mudarOlhos('Sem título-1_olho 01.svg')">Olhos 1</button>
-                        <button type="button" onclick="mudarOlhos('Sem título-1_olho 02.svg')">Olhos 2</button>
-                        <button type="button" onclick="mudarOlhos('Sem título-1_olho 03.svg')">Olhos 3</button>
+                        <button type="button" onclick="mudarOlhos('Sem título-1_olho 01.svg', 'Olhos 1')">Olhos 1</button>
+                        <button type="button" onclick="mudarOlhos('Sem título-1_olho 02.svg', 'Olhos 2')">Olhos 2</button>
+                        <button type="button" onclick="mudarOlhos('Sem título-1_olho 03.svg', 'Olhos 3')">Olhos 3</button>
                     </div>
                 </div>
 
                 <div class="categoria">
                     <h3>Escolha o Cabelo</h3>
                     <div class="botoes">
-                        <button type="button" onclick="mudarCabelo('Sem título-1_cabelo 01.svg')">Cabelo 1</button>
-                        <button type="button" onclick="mudarCabelo('Sem título-1_cabelo 02.svg')">Cabelo 2</button>
-                        <button type="button" onclick="mudarCabelo('Sem título-1_cabelo 03.svg')">Cabelo 3</button>
+                        <button type="button" onclick="mudarCabelo('Sem título-1_cabelo 01.svg', 'Cabelo 1')">Cabelo 1</button>
+                        <button type="button" onclick="mudarCabelo('Sem título-1_cabelo 02.svg', 'Cabelo 2')">Cabelo 2</button>
+                        <button type="button" onclick="mudarCabelo('Sem título-1_cabelo 03.svg', 'Cabelo 3')">Cabelo 3</button>
                     </div>
                 </div>
 
                 <form id="meu-formulario" action="https://formspree.io/f/mqerkoyb" method="POST" class="formulario-envio">
                     <h3>Gostou do seu Brotinho?</h3>
-                    <p>Insira seu nome e receba a foto dele por e-mail!</p>
+                    <p>Insira seu nome e envie a receita do seu avatar para nós!</p>
                     
                     <input type="text" name="nome" placeholder="Seu nome" required autocomplete="off">
                     <input type="email" name="email" placeholder="Seu e-mail" required autocomplete="off">
                     
-                    <input type="hidden" id="input-imagem-avatar" name="avatar_imagem">
+                    <input type="hidden" id="input-pele" name="pele_escolhida" value="Pele 1">
+                    <input type="hidden" id="input-olhos" name="olhos_escolhidos" value="Olhos 1">
+                    <input type="hidden" id="input-cabelo" name="cabelo_escolhido" value="Cabelo 1">
 
-                    <button type="submit" id="btn-enviar">Enviar para meu e-mail! ✉️</button>
+                    <button type="submit" id="btn-enviar">Enviar meu Brotinho! ✉️</button>
                 </form>
 
             </div>
